@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Proof - Livera</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+        <div class="container">
+            <!-- Header -->
+            <div class="social-proof-header">
+                <p class="social-proof-stars">★★★★★ 4.8 stars</p>
+                <h1 class="social-proof-title">
+                    Join 50,000+ people making daily liver support simple
+                </h1>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="social-proof-tabs" role="tablist">
+                <button
+                    class="tab-button active"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="reviews-panel"
+                    data-category="flavor"
+                >
+                    Flavor
+                </button>
+                <button
+                    class="tab-button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="reviews-panel"
+                    data-category="benefit"
+                >
+                    Benefit
+                </button>
+                <button
+                    class="tab-button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="reviews-panel"
+                    data-category="ingredients"
+                >
+                    Ingredients
+                </button>
+                <button
+                    class="tab-button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="reviews-panel"
+                    data-category="convenience"
+                >
+                    Convenience
+                </button>
+            </div>
+
+            <!-- Reviews Grid -->
+            <div class="reviews-container" role="region" aria-live="polite" id="reviews-panel">
+                <div class="reviews-grid" id="reviews-grid">
+                    <!-- Reviews will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Compliance Note -->
+            <p class="social-proof-compliance">
+                Reviews are customer opinions; individual results may vary.
+            </p>
+
+            <!-- CTA Button -->
+            <div class="social-proof-cta">
+                <a href="/#buy" class="btn-primary btn-large">
+                    Get Livera
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="social-proof.js"></script>
+</body>
+</html>
